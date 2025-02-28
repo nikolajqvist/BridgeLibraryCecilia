@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCarMetoderne 1", "TestC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMCMetoderne 1", "TestMCMetoderne 1\TestMCMetoderne 1.csproj", "{58B23B59-4512-458A-B422-0757DB98EB50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProportieLisensplate", "TestProportieLisensplate\TestProportieLisensplate.csproj", "{2177BA8D-B2E0-4B9D-8147-D46CDA52653E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{58B23B59-4512-458A-B422-0757DB98EB50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58B23B59-4512-458A-B422-0757DB98EB50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58B23B59-4512-458A-B422-0757DB98EB50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2177BA8D-B2E0-4B9D-8147-D46CDA52653E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2177BA8D-B2E0-4B9D-8147-D46CDA52653E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2177BA8D-B2E0-4B9D-8147-D46CDA52653E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2177BA8D-B2E0-4B9D-8147-D46CDA52653E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

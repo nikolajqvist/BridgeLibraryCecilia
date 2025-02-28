@@ -14,13 +14,32 @@ namespace BridgeLibrary
         /// <summary>
         /// Licensplate på køretøjet 
         /// </summary>
-        public string Licenseplate { get; set; }
+        private string _licenseplate;
 
         /// <summary>
         /// Dato for hvonar man kører over broen 
         /// </summary>
         public DateTime Date { get; set; }
 
+
+        /// <summary>
+        /// Vi setter lisensplate så den ikke kan være længere end 7 tegn.
+        /// </summary>
+        public string Licenseplate
+        {
+            get => _licenseplate;
+            set
+            {
+                if (value.Length > 7)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(value), "Licenseplate må ikke være længere en 7");
+                }
+                _licenseplate = value;
+            }
+               
+        } 
+            
+            
         /// <summary>
         /// Metode til prisen for det køretøj som kører over broen - metoden er virtuel, hvis subklassen ikke overrider denne metode, vil prisen være 230 
         /// </summary>
