@@ -21,6 +21,11 @@ namespace BridgeLibrary
         /// </summary>
         public DateTime Date { get; set; }
 
+        /// <summary>
+        /// Om køretøjet har brobizz eller ikke    
+        /// </summary>
+        public bool Brobizz { get; set; }
+
 
         /// <summary>
         /// Vi setter lisensplate så den ikke kan være længere end 7 tegn.
@@ -41,12 +46,18 @@ namespace BridgeLibrary
             
             
         /// <summary>
-        /// Metode til prisen for det køretøj som kører over broen - metoden er virtuel, hvis subklassen ikke overrider denne metode, vil prisen være 230 
+        /// Metode til prisen for det køretøj som kører over broen - metoden er virtuel, hvis subklassen ikke overrider denne metode, vil prisen være 230 - 10% hvis de har probizz
         /// </summary>
         /// <returns></returns>
         public virtual double Price()
         {
-            return 230;
+    
+            double price = 230;
+            if (Brobizz)
+            {
+                price *= 0.9; // hvis køretøjet har brobizz får de 10% rabat
+            }
+            return price;
         }
 
         /// <summary>

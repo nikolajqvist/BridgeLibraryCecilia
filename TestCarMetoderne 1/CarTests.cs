@@ -17,6 +17,7 @@ namespace BridgeLibrary.Tests
             //arrange 
             Car c = new Car();
 
+
             //act
             double actual = c.Price();
 
@@ -36,6 +37,20 @@ namespace BridgeLibrary.Tests
 
             //assert 
             Assert.AreEqual("Car", actual);
+        }
+
+        [TestMethod()]
+        public void CarPriceWithBrobizzMethodTest()
+        {
+            //arrange 
+            Car c = new Car();
+            c.Brobizz = true;
+
+            //act
+            double actual = c.Price();
+
+            //assert 
+            Assert.AreEqual(207, actual, delta: 0.1); //delta sørger for at testen bliver korrekt selvom der måske kan forekomme fejl i kommatallene - så længe at forskellen mellem 207 og actual er mindre end 0,1 vil testen bestå - vi bruger overload static assert 
         }
     }
 }
