@@ -37,5 +37,19 @@ namespace BridgeLibrary.Tests
             //assert 
             Assert.AreEqual("MC", actual);
         }
+
+        [TestMethod()]
+        public void MCPriceMethodWithBrobizzTest()
+        {
+            //arrange 
+            MC mc = new MC();
+            mc.Brobizz = true;
+
+            //act
+            double actual = mc.Price();
+
+            //assert 
+            Assert.AreEqual(108, actual);
+        }
     }
 }

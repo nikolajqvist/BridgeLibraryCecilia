@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace BridgeLibrary
 {
@@ -28,7 +29,7 @@ namespace BridgeLibrary
 
 
         /// <summary>
-        /// Vi setter lisensplate så den ikke kan være længere end 7 tegn.
+        /// Lisense plate kan ikke være længere end 7 tegn.
         /// </summary>
         public string Licenseplate
         {
@@ -42,17 +43,23 @@ namespace BridgeLibrary
                 _licenseplate = value;
             }
                
-        } 
-            
-            
+        }
+
         /// <summary>
-        /// Metode til prisen for det køretøj som kører over broen - metoden er virtuel, hvis subklassen ikke overrider denne metode, vil prisen være 230 - 10% hvis de har probizz
+        /// BasePrise er prisen for en billet for det bestemte køretøj uden nogle rabatter.
         /// </summary>
         /// <returns></returns>
+        public abstract double BasePrice();
+        
+            
+        /// <summary>
+        /// Metode til prisen for det køretøj som kører over broen - metoden er virtuel, hvis et køretøj har brobizz vil 10% blive trukket af prisen
+        /// </summary>
+        /// <returns>Returnere priste uden eller med rabatten for brobizz</returns>
         public virtual double Price()
         {
-    
-            double price = 230;
+
+            double price = BasePrice();
             if (Brobizz)
             {
                 price *= 0.9; // hvis køretøjet har brobizz får de 10% rabat
