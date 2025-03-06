@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BridgeLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:BridgeLibrary.Car">
+            <summary>
+            Car er en subklasse og arver fra klassen vehicle 
+            </summary>
+        </member>
+        <member name="M:BridgeLibrary.Car.VehicleType">
+            <summary>
+            VehicleType metode
+            </summary>
+            <returns>Hvilket køretøj det er</returns>
+        </member>
+        <member name="M:BridgeLibrary.Car.BasePrice">
+            <summary>
+            basePrisen for Car
+            </summary>
+            <returns>Prisen</returns>
+        </member>
+        <member name="T:BridgeLibrary.MC">
+            <summary>
+            MC er en subklasse og arver fra klassen vehicle 
+            </summary>
+        </member>
+        <member name="M:BridgeLibrary.MC.VehicleType">
+            <summary>
+            VehicleType metode
+            </summary>
+            <returns>Hvilket køretøj det er</returns>
+        </member>
+        <member name="M:BridgeLibrary.MC.BasePrice">
+            <summary>
+            basePrisen for MC
+            </summary>
+            <returns>Prisen</returns>
+        </member>
+        <member name="T:BridgeLibrary.Vehicle">
+            <summary>
+            Vi laver denne superklasse abstract så den ikke kan instansieres. - det vil sige det kun er subklasserne som kan instalisieres 
+            </summary>
+        </member>
+        <member name="F:BridgeLibrary.Vehicle._licenseplate">
+            <summary>
+            Licensplate på køretøjet 
+            </summary>
+        </member>
+        <member name="P:BridgeLibrary.Vehicle.Date">
+            <summary>
+            Dato for hvonar man kører over broen 
+            </summary>
+        </member>
+        <member name="P:BridgeLibrary.Vehicle.Brobizz">
+            <summary>
+            Om køretøjet har brobizz eller ikke    
+            </summary>
+        </member>
+        <member name="P:BridgeLibrary.Vehicle.Licenseplate">
+            <summary>
+            Lisense plate kan ikke være længere end 7 tegn.
+            </summary>
+        </member>
+        <member name="M:BridgeLibrary.Vehicle.BasePrice">
+            <summary>
+            BasePrise er prisen for en billet for det bestemte køretøj uden nogle rabatter.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BridgeLibrary.Vehicle.Price">
+            <summary>
+            Metode til prisen for det køretøj som kører over broen - metoden er virtuel, hvis et køretøj har brobizz vil 10% blive trukket af prisen
+            </summary>
+            <returns>Returnere priste uden eller med rabatten for brobizz</returns>
+        </member>
+        <member name="M:BridgeLibrary.Vehicle.VehicleType">
+            <summary>
+            Metode til at Bestemme hvilket køretøj man kører i. - metoden er abstact hvilket vil sige alle subklasser skal implementere denne metode
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
