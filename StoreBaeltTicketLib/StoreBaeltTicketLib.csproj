@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BridgeLibrary\BridgeLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="BridgeLibrary">
       <HintPath>..\..\..\..\OneDrive\Skrivebord\DLL og XML BridgeTicket\BridgeLibrary.dll</HintPath>
     </Reference>

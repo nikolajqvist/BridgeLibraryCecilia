@@ -1,9 +1,9 @@
 ﻿using BridgeLibrary;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace StoreBaeltTicketLib
 {
-    public class StoreBaeltCar : Car
+    public class StoreBaeltCar : BridgeLibrary.Car
     {
         public override double Price()
         {
