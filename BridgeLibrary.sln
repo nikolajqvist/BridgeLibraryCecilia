@@ -15,6 +15,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketLib", "Stor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestStoreBaeltCarMethod", "TestStoreBaeltCarMethod\TestStoreBaeltCarMethod.csproj", "{02396E72-7FF6-47D8-9AEA-CCE854FC82D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundbronLib", "OresundbronLib\OresundbronLib.csproj", "{CD9D2D9B-4C5C-4343-B27F-4249ED6251BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestStoreBaeltCarMethod1", "TestStoreBaeltCarMethod1\TestStoreBaeltCarMethod1.csproj", "{0296024D-5A1C-4631-BAC0-6EB9D168A0F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestoresundCarMethod", "TestoresundCarMethod\TestoresundCarMethod.csproj", "{A91F361F-91CC-41DE-A2CA-60A4428731FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +51,18 @@ Global
 		{02396E72-7FF6-47D8-9AEA-CCE854FC82D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02396E72-7FF6-47D8-9AEA-CCE854FC82D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02396E72-7FF6-47D8-9AEA-CCE854FC82D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD9D2D9B-4C5C-4343-B27F-4249ED6251BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD9D2D9B-4C5C-4343-B27F-4249ED6251BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD9D2D9B-4C5C-4343-B27F-4249ED6251BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD9D2D9B-4C5C-4343-B27F-4249ED6251BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0296024D-5A1C-4631-BAC0-6EB9D168A0F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0296024D-5A1C-4631-BAC0-6EB9D168A0F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0296024D-5A1C-4631-BAC0-6EB9D168A0F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0296024D-5A1C-4631-BAC0-6EB9D168A0F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A91F361F-91CC-41DE-A2CA-60A4428731FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A91F361F-91CC-41DE-A2CA-60A4428731FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A91F361F-91CC-41DE-A2CA-60A4428731FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A91F361F-91CC-41DE-A2CA-60A4428731FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
