@@ -27,7 +27,10 @@ namespace BridgeLibrary
         /// </summary>
         public bool Brobizz { get; set; }
 
-
+        public Vehicle()
+        {
+            
+        }
         /// <summary>
         /// Lisense plate kan ikke være længere end 7 tegn.
         /// </summary>
